@@ -8,9 +8,9 @@ import Notfond from './components/NotFound'
 const App = () => (
   <>
     <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/team-matches/:id" component={Teammatches} />
-      <Route path="/random-path" component={Notfond} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/team-matches/:id" component={Teammatches} />
+      <Route exact path="/random-path" component={Notfond} />
     </Switch>
   </>
 )
