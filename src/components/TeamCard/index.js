@@ -6,7 +6,7 @@ const Teamcard = props => {
   const {id, name, teamImageUrl} = Myteamdetails
   return (
     <Link className="linksty" to={`/team-matches/${id}`}>
-      <li>
+      <li className="listty">
         <div className="teamcardbgcontainer">
           <img src={teamImageUrl} alt={`${name}`} className="teamcardimgpx" />
           <p>{name}</p>

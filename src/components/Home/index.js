@@ -30,7 +30,7 @@ class Home extends Component {
   render() {
     const {iplteams, isspinnerrunning} = this.state
     return (
-      <Link to="/home">
+      <Link to="/">
         <div className="bgcontainer">
           <div className="logoheadingcontainer">
             <img
@@ -42,7 +42,7 @@ class Home extends Component {
           </div>
           <div className="teamcardcontainer">
             {isspinnerrunning ? (
-              <div>
+              <div data-testid="loder">
                 <Loader
                   type="TailSpin"
                   color="#00BFFF"

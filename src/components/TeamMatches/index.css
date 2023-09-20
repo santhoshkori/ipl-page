@@ -63,3 +63,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.listty {
+  list-style-type: none;
+}

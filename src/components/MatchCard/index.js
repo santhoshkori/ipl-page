@@ -8,7 +8,7 @@ const Matchcard = props => {
   console.log(iswon)
 
   return (
-    <li>
+    <li className="listty">
       <div className="matchcardcontainer">
         <img
           src={imgUrl}
