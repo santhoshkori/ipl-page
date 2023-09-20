@@ -3,14 +3,23 @@ import './index.css'
 const Matchcard = props => {
   const {matchdet} = props
   const {result, status, team, imgUrl} = matchdet
-  console.log(matchdet)
+
+  const iswon = status === 'Won' ? 'green' : 'red'
+  console.log(iswon)
 
   return (
-    <div className="matchcardcontainer">
-      <img src={imgUrl} className="matchcardimgsty" />
-      <h1>{team}</h1>
-      <p>{result}</p>
-    </div>
+    <li>
+      <div className="matchcardcontainer">
+        <img
+          src={imgUrl}
+          className="matchcardimgsty"
+          alt={`competing team ${team}`}
+        />
+        <p>{team}</p>
+        <p>{result}</p>
+        <p className={iswon}>{status}</p>
+      </div>
+    </li>
   )
 }
 

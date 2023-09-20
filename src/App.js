@@ -1,14 +1,16 @@
 import './App.css'
-import {Fragment} from 'react'
+
 import {Route, Switch} from 'react-router-dom'
 import Teammatches from './components/TeamMatches'
 import Home from './components/Home'
+import Notfond from './components/NotFound'
 
 const App = () => (
   <>
-    <Home />
     <Switch>
+      <Route path="/home" component={Home} />
       <Route path="/team-matches/:id" component={Teammatches} />
+      <Route path="/random-path" component={Notfond} />
     </Switch>
   </>
 )

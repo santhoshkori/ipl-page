@@ -54,7 +54,7 @@ class Teammatches extends Component {
       status: eachrec.match_status,
       id: eachrec.id,
     }))
-    console.log(updatedpascalcaserecentmatches)
+    console.log(data)
 
     this.setState({
       bannerimg: updatabannerimg,
@@ -77,7 +77,7 @@ class Teammatches extends Component {
 
     return (
       <div className={`bgcontainerteammatches ${idteamcolor}`}>
-        <img src={teamBannerUrl} />
+        <img src={teamBannerUrl} alt="team banner" />
         <p>Latest Matches</p>
         <Latestmatc matchdet={latesetmatchdetails} />
         <div className="recectmatchcardcontainer">
